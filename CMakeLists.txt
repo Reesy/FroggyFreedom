@@ -33,6 +33,7 @@ include_directories(
 
 file(GLOB_RECURSE FroggyFreedom_FILES
 	"${PROJECT_SOURCE_DIR}/include/*.h"
+    "${PROJECT_SOURCE_DIR}/include/*.hpp"
 	"${PROJECT_SOURCE_DIR}/src/*.cpp"
 )
 file(COPY resources DESTINATION ./)
