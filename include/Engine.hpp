@@ -8,18 +8,21 @@
 
 #ifndef Engine_hpp
 #define Engine_hpp
-
+#include <SFML/Graphics.hpp>
 #include <stdio.h>
 
 class Engine{
+    public:
+    
+    sf::CircleShape PlayerShape;
+    
     Engine();
     ~Engine();
     
     
-public:
-    void Render();
+    void Render(sf::RenderWindow& window);
     void Update();
-    
+    void Initialise();
     
 };
 
